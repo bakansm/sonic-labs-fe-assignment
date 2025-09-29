@@ -41,15 +41,33 @@
     "enabled": true,
     "rules": {
       "complexity": {
-        "noUselessCatch": "error",
-        "noUselessContinue": "warn",
-        "noUselessEmptyExport": "error",
-        "noUselessFragments": "warn",
+        "noUselessCatch": {
+          "fix": "safe",
+          "level": "error"
+        },
+        "noUselessContinue": {
+          "fix": "safe",
+          "level": "error"
+        },
+        "noUselessEmptyExport": {
+          "fix": "safe",
+          "level": "error"
+        },
+        "noUselessFragments": {
+          "fix": "safe",
+          "level": "error"
+        },
         "recommended": true
       },
       "correctness": {
-        "noUnusedImports": "warn",
-        "noUnusedVariables": "warn",
+        "noUnusedImports": {
+          "fix": "safe",
+          "level": "warn"
+        },
+        "noUnusedVariables": {
+          "fix": "safe",
+          "level": "warn"
+        },
         "recommended": true,
         "useExhaustiveDependencies": "warn",
         "useHookAtTopLevel": "error"
@@ -60,7 +78,7 @@
         "useReactFunctionComponents": "error",
         "useSortedClasses": {
           "fix": "safe",
-          "level": "error",
+          "level": "warn",
           "options": {
             "attributes": ["className", "classList"],
             "functions": ["clsx", "cva", "tw", "tw.*", "cn"]
@@ -74,7 +92,10 @@
       "recommended": true,
       "style": {
         "recommended": true,
-        "useConst": "warn",
+        "useConst": {
+          "fix": "safe",
+          "level": "warn"
+        },
         "useFragmentSyntax": "error"
       },
       "suspicious": {
