@@ -12,6 +12,7 @@ export const courses: Courses = [
     rating: 4.5,
     students: 1200,
     title: 'Blockchain Fundamentals',
+    wishlist: false,
   },
   {
     categories: [
@@ -24,6 +25,7 @@ export const courses: Courses = [
     rating: 4.7,
     students: 950,
     title: 'Smart Contract Development',
+    wishlist: true,
   },
   {
     categories: [
@@ -36,6 +38,7 @@ export const courses: Courses = [
     rating: 4.2,
     students: 800,
     title: 'Web3 for Beginners',
+    wishlist: false,
   },
   {
     categories: [
@@ -48,6 +51,7 @@ export const courses: Courses = [
     rating: 4.6,
     students: 1100,
     title: 'Decentralized Finance (DeFi) Essentials',
+    wishlist: true,
   },
   {
     categories: [
@@ -60,6 +64,7 @@ export const courses: Courses = [
     rating: 4.3,
     students: 750,
     title: 'NFTs & Digital Assets',
+    wishlist: false,
   },
   {
     categories: [
@@ -72,6 +77,7 @@ export const courses: Courses = [
     rating: 4.8,
     students: 1400,
     title: 'Ethereum Deep Dive',
+    wishlist: true,
   },
   {
     categories: [
@@ -84,6 +90,7 @@ export const courses: Courses = [
     rating: 4.4,
     students: 680,
     title: 'Solana Development Bootcamp',
+    wishlist: false,
   },
   {
     categories: [
@@ -96,6 +103,7 @@ export const courses: Courses = [
     rating: 4.7,
     students: 990,
     title: 'Crypto Security & Best Practices',
+    wishlist: true,
   },
   {
     categories: [
@@ -108,6 +116,7 @@ export const courses: Courses = [
     rating: 4.1,
     students: 540,
     title: 'DAOs & Governance',
+    wishlist: false,
   },
   {
     categories: [
@@ -121,6 +130,7 @@ export const courses: Courses = [
     rating: 4.6,
     students: 860,
     title: 'Web3 Frontend with React & Ethers.js',
+    wishlist: true,
   },
   {
     categories: [
@@ -133,6 +143,7 @@ export const courses: Courses = [
     rating: 4.5,
     students: 730,
     title: 'Tokenomics & Crypto Economics',
+    wishlist: false,
   },
   {
     categories: [
@@ -145,5 +156,6 @@ export const courses: Courses = [
     rating: 4.7,
     students: 1020,
     title: 'Layer 2 Scaling Solutions',
+    wishlist: true,
   },
 ];
