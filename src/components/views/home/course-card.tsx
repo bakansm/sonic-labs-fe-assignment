@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, type CardProps, CardTitle } from '@/components/ui/card';
 import { cn } from '@/lib/utils';
 import type { Course } from '@/types/course';
+import { EnrollButton } from './enroll-button';
 
 export type CourseCardProps = CardProps & {
   course: Course;
@@ -46,11 +47,9 @@ export function CourseCard({ course, className, ...props }: CourseCardProps) {
         </div>
       </CardContent>
       <CardFooter className='gap-4'>
-        <Button className='flex-1' shape={'circular'} variant={'gradient'}>
-          Login to enroll now
-        </Button>
+        <EnrollButton />
         <Button color={'dark'} icon shape={'circular'} variant={'ghost'}>
-          <HeartIcon />
+          <HeartIcon className={cn(course.wishlist && 'fill-shade-light')} />
         </Button>
       </CardFooter>
     </Card>

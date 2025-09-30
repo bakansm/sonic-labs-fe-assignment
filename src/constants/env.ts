@@ -1,0 +1,5 @@
+export const ENV = {
+  PRIVY_APP_ID: process.env.NEXT_PUBLIC_PRIVY_APP_ID,
+  PRIVY_APP_SECRET: process.env.NEXT_PUBLIC_PRIVY_APP_SECRET,
+  PRIVY_CLIENT_ID: process.env.NEXT_PUBLIC_PRIVY_CLIENT_ID,
+} as const;

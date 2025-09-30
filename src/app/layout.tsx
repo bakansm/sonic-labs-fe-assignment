@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Urbanist } from 'next/font/google';
 import './globals.css';
 import type { ReactNode } from 'react';
+import WalletProvider from '@/providers/wallet-provider';
 
 const urbanist = Urbanist({
   display: 'swap',
@@ -22,7 +23,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={`${urbanist.variable} antialiased`}>{children}</body>
+      <body className={`${urbanist.variable} antialiased`}>
+        <WalletProvider>{children}</WalletProvider>
+      </body>
     </html>
   );
 }

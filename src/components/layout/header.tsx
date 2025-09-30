@@ -1,4 +1,5 @@
 import { GlobeIcon, MenuIcon } from 'lucide-react';
+import { ConnectWalletButton } from '../common/connect-wallet-button';
 import { Button } from '../ui/button';
 
 export const Header = () => {
@@ -7,9 +8,7 @@ export const Header = () => {
       <div className='mx-auto flex w-full max-w-7xl items-center justify-between px-2.5'>
         <h1 className='text-body-lg'>Logo</h1>
         <div className='flex h-min items-center gap-x-2.5'>
-          <Button shape={'circular'} variant={'gradient'}>
-            Connect Wallet
-          </Button>
+          <ConnectWalletButton />
           <Button className='hidden sm:block' icon shape={'circular'} variant={'gradient'}>
             <GlobeIcon />
           </Button>
