@@ -3,18 +3,22 @@ import Image from 'next/image';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, type CardProps, CardTitle } from '@/components/ui/card';
+import { cn } from '@/lib/utils';
 import type { Course } from '@/types/course';
 
 export type CourseCardProps = CardProps & {
   course: Course;
 };
 
-export function CourseCard({ course, ...props }: CourseCardProps) {
+export function CourseCard({ course, className, ...props }: CourseCardProps) {
   return (
-    <Card {...props}>
+    <Card
+      className={cn('group hover:-translate-y-1 transition-transform duration-300 ease-out hover:shadow-lg', className)}
+      {...props}
+    >
       <Image
         alt={`Course ${course.title} thumnail`}
-        className='bg-shade-2'
+        className='bg-shade-2 transition-transform duration-500 ease-out group-hover:scale-105'
         height={900}
         src={'/image/temp'}
         width={1600}
