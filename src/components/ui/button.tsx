@@ -7,8 +7,8 @@ import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from './tool
 
 const buttonVariants = cva(
   cn(
-    'relative cursor-pointer px-6 py-2 outline-none transition-all',
-    "[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0",
+    'relative h-10 cursor-pointer px-6 outline-none transition-all',
+    '[&_svg]:pointer-events-none [&_svg]:size-6 [&_svg]:shrink-0',
     'disabled:pointer-events-none disabled:opacity-50',
     'focus-visible:outline-1',
   ),
@@ -134,7 +134,7 @@ function Button({
       {loading ? (
         <LoaderIcon className={cn('animate-spin transition-all duration-200 ease-in-out')} />
       ) : (
-        <span className='relative inline-flex shrink-0 items-center justify-center gap-2 whitespace-nowrap text-body'>
+        <span className='relative flex shrink-0 items-center justify-center gap-x-2 whitespace-nowrap text-body'>
           {children}
         </span>
       )}
