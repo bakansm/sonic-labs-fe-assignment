@@ -5,19 +5,19 @@ import { cn } from '@/lib/utils';
 
 const badgeVariants = cva(
   cn(
-    'relative inline-flex w-fit shrink-0 items-center justify-center gap-1 overflow-hidden whitespace-nowrap rounded-full px-3 py-0.5 font-medium text-xs transition-all',
+    'relative flex h-5.5 w-fit shrink-0 items-center justify-center gap-1 overflow-hidden whitespace-nowrap rounded-full px-3 font-medium text-xs transition-all',
     '[&>svg]:pointer-events-none [&>svg]:size-3',
   ),
   {
     compoundVariants: [
       {
         className: cn('bg-shade-2/16 text-shade-2'),
-        color: 'dark',
+        color: 'light',
         variant: 'ghost',
       },
       {
         className: cn('bg-shade-light/16 text-shade-light'),
-        color: 'light',
+        color: 'dark',
         variant: 'ghost',
       },
       {
