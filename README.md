@@ -10,3 +10,6 @@
 # Design: [Figma](https://www.figma.com/design/mztvjjQpCaiGnb1qH6UZLa/Untitled?node-id=132-56&t=lOZCgYHAUmPQ5EoQ-1)
 
 # Live demo: [Link](https://sonic-labs-fe-assignment.vercel.app/)
+
+# Note: 
+For **Connect Wallet** feature, please use Live demo or create a [Privy](https://www.privy.io/) Apps and fill env like the .env.example
