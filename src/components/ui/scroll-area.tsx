@@ -8,7 +8,7 @@ function ScrollArea({ className, children, ...props }: ComponentProps<typeof Roo
   return (
     <Root className={cn('relative', className)} data-slot='scroll-area' {...props}>
       <Viewport
-        className='size-full rounded-[inherit] outline-none transition-[color,box-shadow] focus-visible:outline-1 focus-visible:ring-[3px] focus-visible:ring-ring/50'
+        className='size-full rounded-[inherit] outline-none transition-[color,box-shadow] focus-visible:outline-1'
         data-slot='scroll-area-viewport'
       >
         {children}
@@ -32,7 +32,7 @@ function ScrollBar({ className, orientation = 'vertical', ...props }: ComponentP
       orientation={orientation}
       {...props}
     >
-      <ScrollAreaThumb className='relative flex-1 rounded-full bg-border' data-slot='scroll-area-thumb' />
+      <ScrollAreaThumb className={cn('relative flex-1 rounded-full bg-neutral-500')} data-slot='scroll-area-thumb' />
     </ScrollAreaScrollbar>
   );
 }

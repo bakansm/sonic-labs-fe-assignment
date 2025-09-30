@@ -17,7 +17,12 @@
   --color-popover-foreground: hsl(210, 40%, 98%);
   --color-background: hsl(240, 5%, 8%);
   --color-foreground: hsl(0, 0%, 96%);
+  --color-foreground-reverse: hsl(240, 5%, 8%);
+  --color-foreground-sub: hsl(240, 2%, 70%);
   --color-border: hsl(215, 20%, 39%);
+
+  /* Gradient */
+  --background-image-gradient: linear-gradient(135deg, #214e81 0%, #506179 33%, #ed5409 67%, #ffcb67 100%);
 
   --radius-2xs: calc(var(--radius) - 12px); /* 4px */
   --radius-2xs-plus: calc(var(--radius) - 10px); /* 6px */
