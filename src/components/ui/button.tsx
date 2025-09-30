@@ -20,7 +20,7 @@ const buttonVariants = cva(
           'hover:border-shade-2/24 hover:bg-shade-2/24',
           'active:border-shade-2/8 active:bg-shade-2/8',
         ),
-        color: 'dark',
+        color: 'light',
         variant: 'ghost',
       },
       {
@@ -29,7 +29,7 @@ const buttonVariants = cva(
           'hover:border-shade-light/24 hover:bg-shade-light/24',
           'active:border-shade-light/8 active:bg-shade-light/8',
         ),
-        color: 'light',
+        color: 'dark',
         variant: 'ghost',
       },
       {
